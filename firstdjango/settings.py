@@ -78,13 +78,20 @@ WSGI_APPLICATION = 'firstdjango.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'DB1',
+#         'USER': 'postgres',
+#         'PASSWORD':'samal@03',
+#         'HOST':'localhost'
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'DB1',
-        'USER': 'postgres',
-        'PASSWORD':'samal@03',
-        'HOST':'localhost'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': str(BASE_DIR) + '/'+ 'db.sqlite3',
     }
 }
 
