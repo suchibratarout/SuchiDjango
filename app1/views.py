@@ -21,6 +21,7 @@ def signup(request):
         lastname=request.POST['last_name']
         email=request.POST['email_id']
         password=request.POST['password']
+        phno=request.POST['phone-no']
 
         x=User.objects.create_user(username=username,first_name=firstname,last_name=lastname,email=email,password=password)
         x.save()
